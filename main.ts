@@ -8,6 +8,10 @@ const roast =
 // Self-check against the competition gate before writing: the entry must
 // be one non-empty line of 1-200 code points. Fail loudly instead of
 // writing an invalid entry.
+// Competition gate: the entry must be one non-empty line of 1-200 code
+// points. Keep the bound in one place so the check and the message agree.
+const MAX_CODE_POINTS = 200;
+
 function validateRoast(text: string): number {
   const codePoints = [...text].length;
   if (text.trim().length === 0) {
@@ -16,8 +20,10 @@ function validateRoast(text: string): number {
   if (text.includes("\n") || text.includes("\r")) {
     throw new Error("roast must be a single line");
   }
-  if (codePoints < 1 || codePoints > 200) {
-    throw new Error(`roast must be 1-200 code points, got ${codePoints}`);
+  if (codePoints < 1 || codePoints > MAX_CODE_POINTS) {
+    throw new Error(
+      `roast must be 1-${MAX_CODE_POINTS} code points, got ${codePoints}`,
+    );
   }
   return codePoints;
 }
