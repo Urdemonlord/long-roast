@@ -3,7 +3,7 @@ import * as path from "node:path";
 
 // The Long Roast: one line roasting the AI agent this entry runs on.
 const roast =
-  "My agent read one word, gas, and put my client's store in maintenance, then asked me which gas I meant.";
+  "My agent fixed the reviewer's 25 findings, and the reviewer found 11 new ones hiding in the fix.";
 
 // Self-check against the competition gate before writing: the entry must
 // be one non-empty line of 1-200 code points. Fail loudly instead of
