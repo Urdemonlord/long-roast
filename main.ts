@@ -28,5 +28,9 @@ function writeEntry(text: string): void {
   fs.writeFileSync(path.join(outDir, "entry.txt"), text, "utf8");
 }
 
-validateRoast(roast);
-writeEntry(roast);
+function main(): void {
+  validateRoast(roast);
+  writeEntry(roast);
+}
+
+main();
