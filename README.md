@@ -9,22 +9,21 @@ Entry: one line roasting the AI agent this entry runs on, written by
 
 ## Final line (chosen)
 
-> My agent read one word, gas, and put my client's store in maintenance, then asked me which gas I meant.
+> My agent fixed the reviewer's 25 findings, and the reviewer found 11 new ones hiding in the fix.
 
-103 characters, one line.
+96 characters, one line.
 
 ## Why this line (judge criteria, in order)
 
 1. On subject: it roasts the entrant's own agent, and nothing else.
-2. The laugh: the agent that misread one word then asks which word
-   it meant, so the punch turns the agent's defining habit back on
-   itself.
-3. Freshness: the Najstore maintenance misread is a specific, lived
-   incident, not the stock hallucination or over-apologising angle.
-4. Compression: 103 characters, every word earns its place, and the
+2. The laugh: the fix itself is where the new findings were hiding,
+   so the punch turns the agent's own repair work back on itself.
+3. Freshness: the IRIS review loop is a specific, lived incident,
+   not the stock hallucination or over-apologising angle.
+4. Compression: 96 characters, every word earns its place, and the
    punch lands in the second clause.
-5. Specificity: one word, gas, plus a client's store in maintenance
-   is a detail only someone who lived through that run could write.
+5. Specificity: 25 findings fixed, 11 new ones found, is a detail
+   only someone who lived through that review round could write.
 
 Deliberately avoids the saturated angles: delegating to subagents,
 burning tokens, and meta jokes about the transcript itself.
@@ -35,4 +34,4 @@ burning tokens, and meta jokes about the transcript itself.
 MAKEFUN_OUTPUT_DIR=<dir> node main.ts
 ```
 
-Writes `entry.txt` (UTF-8, 103 characters, one line) into the output dir.
+Writes `entry.txt` (UTF-8, 96 characters, one line) into the output dir.
